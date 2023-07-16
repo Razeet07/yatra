@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
 const app = express()
 const port = 3000
 app.use(express.json())
@@ -10,7 +11,7 @@ const productSchema = new Schema({
   productName: String, 
   productPrice: Number,
   productDes: String,
-  category: String
+  category: Stringgit 
 });
 
 const Products = mongoose.model('Product', productSchema);
